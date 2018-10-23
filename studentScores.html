@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>وضعیت دانش آموز</title>
+
+    <meta name="robots" content="noindex">
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/constantCssFile.css">
+
+</head>
+<body>
+
+<header>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="container container2">
+                <div class="row" id="logoNameMenu">
+
+                    <div class="col s12 padding-8 padding-bottom-none">
+                        <div class="left leftPart center-on-small-only">
+                            <img src="img/Logo.png" alt="logo of school">
+                        </div>
+                        <div class="right rightPart hide-on-med-and-down">
+                            <img src="img/header-dart.jpg" alt="name of the school">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+
+                    <nav id="menu" class="center z-depth-5 hoverable">
+                        <a href="#" data-activates="side-nav" class="button-collapse myBurger">
+                            <i class="fa fa-bars fa-3x"></i>
+                        </a>
+                        <div class="nav-wrapper">
+                            <div class="container3 container">
+                                <ul class="right hide-on-med-and-down" id="special">
+                                    <li>
+                                        <a href="#" class="white-text-hover">
+                                            <i class="fa fa-user right margin-LR-4"></i>
+                                            کاربر مهمان
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="white-text-hover" href="#modal1"  style="background: rgba(70, 70, 70,0.02);border-radius:10px">
+                                            <i class="fa fa-sign-in right margin-LR-4"></i>
+                                            صفحه شخصی
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="about-school.html" class="white-text-hover">
+                                            <i class="fa fa-university right margin-LR-4"></i>
+                                            درباره مدرسه
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  href="#" class="dropdown-button white-text-hover" data-activates="dropdown1">
+                                            <i class="fa fa-question right margin-LR-4"></i>
+                                            مشاوره تحصیلی
+                                            <i class="fa fa-caret-down left margin-LR-8"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-button white-text-hover" data-activates="dropdown2">
+                                            <i class="fa fa-file right margin-LR-4"></i>
+                                            مطالب درسی
+                                            <i class="fa fa-caret-down left margin-LR-8"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html" class="white-text-hover">
+                                            <i class="fa fa-home right margin-LR-4"></i>
+                                            صفحه اصلی
+                                        </a>
+                                    </li>
+                                </ul></div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+
+
+            <!--
+                ================================================
+                ================================================
+                        side nav part
+                ================================================
+                ================================================
+            -->
+
+            <ul class="side-nav" id="side-nav">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">
+                            <a href="#" class="padding-LR-8 black-text">
+                                <i class="fa fa-user fa-2x right margin-LR-4"></i>
+                                <span class="right">کاربر مهمان</span>
+                            </a>
+                        </div>
+                        <div class="collapsible-body">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header green-hover-l3">
+                            <a href="#modal1" class="padding-LR-8 black-text">
+                                <i class="fa fa-sign-in fa-2x right margin-LR-4"></i>
+                                <span class="right">صفحه شخصی</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header yellow-hover-l2">
+                            <a href="index.html" class="padding-LR-8 black-text">
+                                <i class="fa fa-home fa-2x right margin-LR-4"></i>
+                                <span class="right">صفحه اصلی</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header orange-hover-l2">
+                            <a href="#!" class="padding-LR-8 black-text">
+                                <i class="fa fa-file-text fa-2x right margin-LR-4"></i>
+                                <span class="right">مطالب درسی</span>
+                                <i class="fa fa-caret-down fa-2x right margin-right-none"></i>
+                            </a>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="right-align">
+                                <div class="orange-hover-l2">
+                                    <li class=" padding-LR-32 padding-left-none padding-0">
+                                        <a href="video-lessons.html">
+                                            <i class="fa fa-film right margin-right-none"></i>
+                                            <span class="right margin-LR-4">اموزش های ویدئویی</span>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="orange-hover-l2">
+                                    <li class=" padding-LR-32 padding-left-none padding-0">
+                                        <a href="powerpoint-lessons.html">
+                                            <i class="fa fa-file-powerpoint-o right margin-right-none"></i>
+                                            <span class="right margin-LR-4">پاورپوینت های درسی</span>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="orange-hover-l2">
+                                    <li class=" padding-LR-32 padding-left-none padding-0">
+                                        <a href="summary-lessons.html">
+                                            <i class="fa fa-file-text right margin-right-none"></i>
+                                            <span class="right margin-LR-4">خلاصه درس ها</span>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="orange-hover-l2">
+                                    <li class=" padding-LR-32 padding-left-none padding-0">
+                                        <a href="question-explaining.html">
+                                            <i class="fa fa-file-pdf-o right margin-right-none"></i>
+                                            <span class="right margin-LR-4">نمونه سوالات تشریحی</span>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="orange-hover-l2">
+                                    <li class=" padding-LR-32 padding-left-none padding-0">
+                                        <a href="question-test.html">
+                                            <i class="fa fa-check right margin-right-none"></i>
+                                            <span class="right margin-LR-4">نمونه سوالات تستی</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header purple-hover-l2">
+                            <a href="#" class="padding-LR-8 black-text">
+                                <i class="fa fa-question fa-2x right margin-LR-4"></i>
+                                <span class="right">مشاوره تحصیلی</span>
+                                <i class="fa fa-caret-down fa-2x right margin-right-none"></i>
+                            </a>
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="right-align">
+                                <div class="purple-hover-l2">
+                                    <li class=" padding-LR-32 padding-left-none padding-0">
+                                        <a href="moshavere-video.html">
+                                            <i class="fa fa-video-camera right margin-right-none"></i>
+                                            <span class="right margin-LR-4">مشاوره ویدئویی</span>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="purple-hover-l2">
+                                    <li class=" padding-LR-32 padding-left-none padding-0">
+                                        <a href="moshavere-text.html">
+                                            <i class="fa fa-file-text right margin-right-none"></i>
+                                            <span class="right margin-LR-4">مشاوره متنی</span>
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="purple-hover-l2">
+                                    <li class=" padding-LR-32 padding-left-none padding-0">
+                                        <a href="moshavere-voice.html">
+                                            <i class="fa fa-microphone right margin-right-none"></i>
+                                            <span class="right margin-LR-4">مشاوره صوتی</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header blue-hover-l2">
+                            <a href="about-school.html" class="black-text padding-LR-8">
+                                <i class="fa fa-university fa-2x right margin-LR-4"></i>
+                                <span class="right">درباره مدرسه</span>
+                            </a>
+                        </div>
+                        <div class="collapsible-body">
+
+                        </div>
+                    </li>
+
+                    <li id="sidenav-closer">
+                        <div class="collapsible-header">
+                            <a href="#" class="padding-LR-8 black-text">
+                                <i class="fa fa-arrow-left fa-2x right margin-LR-4"></i>
+                                <span class="right">بستن منو</span>
+                            </a>
+                        </div>
+                        <div class="collapsible-body">
+
+                        </div>
+                    </li>
+                </ul>
+
+            </ul>
+
+
+
+            <!--
+            =====================================
+            =====================================
+               dropdown for moshavere tahisli
+            =====================================
+            =====================================
+            -->
+            <ul id="dropdown1" class="dropdown-content dropDownStyle">
+                <li>
+                    <a href="moshavere-video.html">
+                        <i class="fa fa-video-camera right margin-right-none"></i>
+                        <span class="right margin-LR-4">مشاوره ویدئویی</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="moshavere-text.html">
+                        <i class="fa fa-file-text right margin-right-none"></i>
+                        <span class="right margin-LR-4">مشاوره متنی</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="moshavere-voice.html">
+                        <i class="fa fa-microphone right margin-right-none"></i>
+                        <span class="right margin-LR-4">مشاوره صوتی</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <!--
+            =====================================
+            =====================================
+               dropdown for matlabe darsi
+            =====================================
+            =====================================
+            -->
+            <ul id="dropdown2" class="dropdown-content dropDownStyle">
+                <li>
+                    <a href="video-lessons.html">
+                        <i class="fa fa-film right margin-right-none"></i>
+                        <span class="right margin-LR-4">اموزش های ویدئویی</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="powerpoint-lessons.html">
+                        <i class="fa fa-file-powerpoint-o right margin-right-none"></i>
+                        <span class="right margin-LR-4">پاورپوینت های درسی</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="summary-lessons.html">
+                        <i class="fa fa-file-text right margin-right-none"></i>
+                        <span class="right margin-LR-4">خلاصه درس ها</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="question-explaining.html">
+                        <i class="fa fa-file-pdf-o right margin-right-none"></i>
+                        <span class="right margin-LR-4">نمونه سوالات تشریحی</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="question-test.html">
+                        <i class="fa fa-check right margin-right-none"></i>
+                        <span class="right margin-LR-4">نمونه سوالات تستی</span>
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!--
+            =============================================
+             Modal1 Structure  FOR LOGIN PART
+             ===============================================
+              -->
+            <div id="modal1" class="modal myModal">
+                <img src="img/blackboard.jpg" alt="blackBoard Backgorund for sign in">
+                <div class="modal-content padding-LR-64">
+                    <form action="send">
+                        <div class="input-field" id="userNameField">
+                            <input type="text" id="userName2">
+                            <label for="userNAme2">userName</label>
+                            <i class="fa fa-lightbulb-o bulbChecker"></i>
+                        </div>
+                        <div class="input-field" id="passwordField">
+                            <input type="password" id="password2">
+                            <label for="password2">password</label>
+                            <i class="fa fa-lightbulb-o bulbChecker"></i>
+                        </div>
+                        <button class="btn btn-floating bg-hover-transparent
+                         bg-transparent hoverable my-floating z-depth-3" type="submit">sing-in</button>
+                    </form>
+                </div>
+                <div class="close-modal-btn modal-close">
+                    <p class="font-xxxlarge white-text margin-32">X</p>
+                </div>
+            </div>
+
+            <!--
+         ==============================================
+                      MODAL FOR ASK
+         ==============================================
+         -->
+            <div class="modal" id="modal2">
+                <div class="modal-content modal-content2">
+                    <div class="row">
+                        <div class="modal-content2-header col s12 padding-16">
+                            <div class="right">
+                                <button class="btn margin-LR-8 white black-text modal-close" id="modal1Closer">بستن</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <h6 class="light">نظرات و پیشنهادات و انتقادات خود را در این قسمت مستقیما به مدیر مدرسه ارسال کنید</h6>
+                        </div>
+                        <div class="col s12">
+                            <form action="">
+                                <div class="input-field">
+                                    <i class="fa fa-user prefix"></i>
+                                    <input type="text" id="name" class="validate">
+                                    <label for="name">نام شما</label>
+                                </div>
+                                <div class="input-field">
+                                    <i class="fa fa-edit prefix"></i>
+                                    <textarea id="pointOfView" class="validate materialize-textarea"></textarea>
+                                    <label for="pointOfView">دیدگاه شما</label>
+                                </div>
+                                <button type="submit" class="btn grey darken-4"> ارسال <span class="fa fa-paper-plane-o"></span></button>
+                                <button type="reset" class="btn grey darken-4">بازنویسی <span class="fa fa-refresh"></span></button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container container2">
+            <div class="row z-depth-3">
+                <div class="center-align full-padding-16  margin-16 margin-bottom-none">
+                    <div class="card2 margin-16">
+                        <div class="card-header2 cyan center-align">
+                            <P class="white-text font-xlarge">پنل دانش آموزی</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+<div class="divider"></div>
+<br>
+<main>
+    <div class="row">
+        <div class="col s12 l4 right">
+            <div class="padding-LR-16 z-depth-5 controlWebsitePartContainer white-text">
+                <ul class="collapsible controlWebsitePart margin-top-none padding-bottom-none" data-collapsible="accordion">
+                    <li class="right-align" id="sliderChange2">
+                        <div class="collapsible-header  balck-text-hover"> <i class="fa fa-calendar"></i>برنامه مشاور</div>
+                    </li>
+                    <li class="right-align" id="sliderChange22">
+                        <div class="collapsible-header  balck-text-hover"> <a class="white-text" href="student-data.html"><i class="fa fa-graduation-cap"></i>اطلاعات دانش آموز</a></div>
+                    </li>
+                    <li class="right-align" id="sliderChange">
+                        <div class="collapsible-header  balck-text-hover"><a class="white-text" href="studentScores.html"><i class="fa fa-graduation-cap"></i>کارنامه</a></div>
+                    </li>
+                    <li class="right-align" id="sliderChange3">
+                        <div class="collapsible-header  balck-text-hover"> <i class="fa fa-exclamation-triangle "></i> برگه انضباطی</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col s12 l8 left">
+            <div class="padding-LR-16 z-depth-5">
+                <div class="card2 margin-16">
+                    <div class="card-header2  center-align" id="card-header2">
+                        <P class="white-text">نمرات دانش آموز</P>
+                    </div>
+                    <div class="card-content2">
+                        <div class="center-align">
+                            <table class="centered">
+                                <thead>
+                                <tr>
+                                    <th>نمرات از چپ به راست بر اساس تاریخ مرتب شده اند</th>
+                                    <th>نام درس</th>
+                                    <th>#</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="chip">17</div>
+                                        <div class="chip">17</div>
+                                        <div class="chip">17</div>
+                                        <div class="chip">17</div>
+                                    </td>
+                                    <td>ریاضی</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chip">7</div>
+                                        <div class="chip">1</div>
+                                        <div class="chip">9</div>
+                                        <div class="chip">17</div>
+                                    </td>
+                                    <td>زیست</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="chip">13</div>
+                                        <div class="chip">14</div>
+                                        <div class="chip">11</div>
+                                        <div class="chip">2</div>
+                                    </td>
+                                    <td>هندسه</td>
+                                    <td>1</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="page-footer my-footer">
+    <div class="footer-copyright z-depth-5">
+        <div class="container center">
+            <a class="grey-text text-lighten-4" href="#!">تمامی حقوق مادی و معنوی این وبسایت متعلق به تیم <span class="yellow-text">دراتک</span> است</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/materialize.js"></script>
+<script src="js/FirstPage.js"></script>
+
+</body>
+</html>

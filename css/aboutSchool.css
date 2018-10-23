@@ -1,0 +1,11 @@
+blockquote{
+    border-left: none !important;
+    border-right:  5px solid rgb(237, 176, 89) !important;
+    padding-left: 0 !important;
+    padding-right: 1.5rem;
+}
+.img-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}

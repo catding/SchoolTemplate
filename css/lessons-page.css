@@ -1,0 +1,17 @@
+.heading-for-this-page div img{
+    width: 100px !important;
+    height: 100px !important;
+}
+.tabs .tab a.active{
+
+}
+.lesson-boxes{
+    height: 315px;
+    margin-top: 10px;
+}
+
+/*
+===================================
+        media queries
+===================================
+*/

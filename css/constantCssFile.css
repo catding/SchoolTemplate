@@ -1,0 +1,395 @@
+/*
+===========================================
+        here we have fonts
+        ====================================*/
+@font-face {
+    font-family: "yekanFont";
+    src: url(../fonts/yekanFont/IRYekan.ttf) format("truetype");
+    src: url(../fonts/yekanFont/IRYekanBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "takhte-siah";
+    src: url(../fonts/blackBoard/KGSecondChancesSketch.ttf) format("truetype");
+}
+body{
+    background: url("../img/symphony.png");
+    overflow-x:hidden;
+    font-family:  yekanFont, Tahoma ;
+}
+.schoolTextColor{
+    color: rgb(237, 176, 89) !important;
+}
+.schoolBackgroundColor{
+    background-color: rgba(41,44,47,0.9) !important;
+}
+/*
+===========================================
+        here we have top part menu and like this
+        ====================================*/
+.leftPart img{
+    width: 100px;
+    height:100px;
+    cursor: pointer;
+}
+nav {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+    background: rgba(41,44,47,0.9);
+    box-sizing: border-box;
+}
+#special>li a{
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s ;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s ;
+    transition: all 0.4s ;
+}
+nav ul a{
+    color: rgb(237, 176, 89) !important;
+    text-shadow: 0 2px 3px rgba(200, 200, 200, 0.20);
+    font-size:13px;
+    font-weight:300;
+}
+.rightPart{
+    width: 350px;
+    height: 106px;
+    cursor: pointer;
+}
+.myNavFixes nav{
+    top:0 !important;
+    height: 70px;
+}
+.myBurger{
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.dropDownStyle{
+    top:100% !important;
+    left: inherit !important;
+    width: 100% !important;
+    right: 0 !important;
+    background: rgba(41,44,47,1)
+}
+.dropDownStyle li a{
+    color:white !important;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.dropdown-content li:hover a{
+    background-color: transparent;
+    color: rgb(237, 176, 89) !important;
+}
+.dropdown-content li:hover{
+    background-color: transparent;
+}
+nav .active{
+    border-top:2px solid transparent;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)
+}
+
+/*=====================================================
+        here we have style of left part of our website
+  ====================================================
+  */
+.constant{
+    background: rgba(41,44,47,0.9);
+}
+.constant-title{
+    height: 40px;
+    width: 100%;
+    color: rgb(237, 176, 89)
+}
+.icon-title{
+    height: 40px;
+    width: 20%
+}
+.icon-title i{
+    width: 30px;
+    height: 30px;
+    margin: 0 32%;
+}
+.text-title{
+    height: 40px;
+    width: 80%;
+    transform: translate(20px,2px)
+}
+.collection .collection-item.avatar{
+    padding-right: 90px !important;
+    padding-left: 0;
+    text-align: right;
+}
+.collection li span{
+    cursor: pointer;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+.collection li{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+.collection li:hover{
+    background-color: rgba(235,235,235,1)
+}
+.collection .collection-item.avatar img{
+    position: absolute;
+    width: 72px;
+    height: 85px;
+    overflow: hidden;
+    right: 5px;
+    top:2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.constant .card{
+    background: rgba(41,44,47,0.9) !important; ;
+}
+.collection-icon-helper{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+.social-media{
+    width: 85%;
+    height: 80px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.social-media :first-child{
+    color: #e4405f;
+}
+.social-media :nth-child(2){
+    color: #3b5999;
+}
+.social-media :nth-child(3){
+    color: #1ab7ea;
+}
+.social-media :nth-child(4){
+    color: #0077B5;
+}
+/*
+=====================================
+        this part is login modal
+=====================================
+*/
+.myModal{
+    height: 600px;
+    z-index: 2009 !important;
+    font-family: takhte-siah;
+}
+.myModal img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.modal-overlay{
+    z-index: 2005!important;
+}
+.close-modal-btn{
+    position: absolute;
+    right: 45px;
+    bottom:0;
+}
+.my-floating{
+    width: 70px;
+    height:70px;
+}
+.input-field{
+    margin-top: 45px !important;
+}
+.bulbChecker{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem !important;
+}
+#email:invalid{
+    border-bottom: 1px solid red !important;
+}
+/*
+=========================================
+        modal of question
+=========================================
+*/
+#modal2{
+    z-index: 2006 !important;
+    color: rgb(237, 176, 89) !important
+}
+.modal-content2-header{
+    background: rgba(41,44,47,0.9) !important; ;
+}
+#modal2 button{
+    color: rgb(237, 176, 89) !important
+}
+/*
+==========================================
+        we have those four boxes that contains most important links
+==========================================
+*/
+.box{
+    height: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box-container .box:nth-child(1){
+    background-color: rgba(182, 0, 80, 0.3);
+}
+.box-container .box:nth-child(2){
+    background-color: rgba(120, 162, 47, 0.3);
+}
+.box-container .box:nth-child(3){
+    background-color: rgba(253, 163, 31, 0.3);
+}
+.box-container .box:nth-child(4){
+    background-color: rgba(77, 138, 164, 0.3);
+}
+
+.box-buttons{
+    width: 70%;
+    background-color: rgba(70,70,70,0.5);
+    border: 2px solid white;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.box-buttons:hover{
+    background-color: white;
+    color: black;
+}
+
+/*==============================footer part===================================*/
+.my-footer{
+    background-color: rgba(41,44,47,1);
+}
+.last-articles h5, .popular-article h5{
+    color: rgb(237, 176, 89) !important;
+    font-size: 18px !important;
+}
+.last-articles ul li a:hover, .popular-article ul li a:hover{
+    opacity: 0.6;
+}
+.last-articles ul li, .popular-article ul li{
+    position: relative;
+    margin-top: 9px;
+}
+.last-articles ul li:before, .popular-article ul li:before{
+    position: absolute;
+    top: 9px;
+    right: 0;
+    border:4px solid rgb(237, 176, 89);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    content: "";
+}
+
+
+/*
+========================================
+            we have constant part of admin panel here
+========================================
+*/
+.controlWebsitePart {
+    border: none !important;
+    padding-bottom: 10px;
+
+}
+.controlWebsitePartContainer{
+    background-color: rgba(41,44,47,0.3) !important;
+}
+.controlWebsitePart li .collapsible-header{
+    background-color: rgba(41,44,47,0.7) !important;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear ;
+    -ms-transition: all 0.3s linear ;
+    -o-transition: all 0.3s linear ;
+    transition: all 0.3s linear ;
+}
+.controlWebsitePart li .collapsible-header:hover{
+    background-color: rgba(250,250,250,0.3) !important;
+}
+.collapsible-body > ul li a{
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear ;
+    -ms-transition: all 0.2s linear ;
+    -o-transition: all 0.2s linear ;
+    transition: all 0.2s linear ;
+}
+.collapsible-body > ul li a:hover{
+    color: rgba(0,0,14,0.64) !important;
+}
+
+/*
+=========================
+        left part for contents
+=========================
+*/
+
+#card-header2 p{
+    color: rgb(237, 176, 89) !important;
+}
+#card-header2{
+    background-color: rgba(41,44,47,0.9) !important;
+}
+
+/*
+======================================================
+        we have media queries here
+======================================================
+*/
+@media only screen and (max-width: 993px) {
+    .leftPart{
+        margin-left: 50%;
+        -webkit-transform: translateX(-32%);
+        -moz-transform: translateX(-32%);
+        -ms-transform: translateX(-32%);
+        -o-transform: translateX(-32%);
+        transform: translateX(-32%);
+    }
+    .dropDownStyle{
+        top:0% !important;
+        left: inherit !important;
+        width: 100% !important;
+
+    }
+    .myConstant{
+        margin-top: 16px !important;
+    }
+    .page-footer :first-child :first-child{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .page-footer :first-child :first-child {
+        padding-left: 0 !important;
+        padding-right: 16px !important;
+    }
+    .modal-content{
+        padding-left: 32px !important;
+        padding-rigth: 32px !important;
+    }
+
+}
+@media only screen and (min-width: 993px){
+    .container2{
+        width: 85% !important;
+    }
+    .container3{
+        width: 100% !important;
+    }
+}
